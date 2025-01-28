@@ -3,7 +3,6 @@ import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import Projects from './Components/Projects/Projects'
 import Title from './Components/Title/Title'
-import Carousel from './Components/Carousel/Carousel'
 
 const App = () => {
   return(
@@ -13,7 +12,6 @@ const App = () => {
 
       <div className='container'>
         <Title title='Projects'/>
-        <Carousel/>
       </div>
 
       <div className='container'>
