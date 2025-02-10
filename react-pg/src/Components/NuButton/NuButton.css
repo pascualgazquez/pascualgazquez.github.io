@@ -1,0 +1,29 @@
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonbg {
+  padding: 0.5rem 0.5rem;
+  font-weight: 500;
+  background-color: white; /* Indigo-500 */
+  color: black;
+  border:black;
+  width: fit-content;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 3px 3px 0px black;
+  border: none; 
+  cursor: pointer; 
+}
+
+.buttonbg:hover {
+  background-color: var(--hover-color);
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+.button-image {
+  width: 50px;
+  height: 50px;
+}

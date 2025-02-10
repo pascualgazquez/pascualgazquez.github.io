@@ -3,7 +3,7 @@ nav{
     /*background: #333;*/    
     color: #fff;
 
-    padding: 4px 0;
+    padding: 4px 4px;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,16 +14,18 @@ nav{
 }
 
 .logo{
-    width: 180px;
+    width: 300px;
 }
 nav ul li{
+    align-items:left;
     display: inline-block;
     list-style: none;
-    margin: 5px 20px;
-    font-size: 16px;
+    margin: 4px 4px;
+    font-size: 24px;
 }
 
 .dark-nav{
-    background: #212EA0;
-    transition: 1s;
+    background: #000;
+    transition: 0.2s;
+    padding-top: 0;
 }
