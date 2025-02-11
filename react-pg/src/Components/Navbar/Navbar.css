@@ -3,29 +3,47 @@ nav{
     /*background: #333;*/    
     color: #fff;
 
-    padding: 4px 4px;
+    padding: 20px 0px;
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: space-between;
     z-index: 10;
 }
 
 .logo{
-    width: 300px;
+    width: 25%;
+    max-width: 500px;
+
+    position: relative;
+    z-index: 10;
 }
 nav ul li{
     align-items:left;
-    display: inline-block;
+    display: inline-flex;
     list-style: none;
-    margin: 4px 4px;
-    font-size: 24px;
+    align-items: center;
+    justify-content: center; 
+
+    position: relative;
+    z-index: 10;
+
 }
 
 .dark-nav{
-    background: #000;
-    transition: 0.2s;
-    padding-top: 0;
+    background-image: url('../../assets/navbarbg.gif');
+    background-size: contain;
+    background-position: top;
+    background-repeat: repeat-x; 
+    padding-top: 20;
+}
+
+.hovered-text{
+    margin-right: 15px;
+    font-size: 1em;
+    color: #fff;
+    opacity: 1; 
+    top: 50%; 
 }
