@@ -14,8 +14,8 @@ nav{
 }
 
 .logo{
-    width: 25%;
-    max-width: 500px;
+    width: 30%;
+    max-width: 300px;
 
     position: relative;
     z-index: 10;
@@ -34,16 +34,34 @@ nav ul li{
 
 .dark-nav{
     background-image: url('../../assets/navbarbg.gif');
-    background-size: contain;
+    background-size:  100% contain;
     background-position: top;
     background-repeat: repeat-x; 
     padding-top: 20;
 }
 
 .hovered-text{
-    margin-right: 15px;
+    position: absolute;
+    top: 100%;
+    right: 0px; 
+
+    transform: translateX(0); 
+    transform: translateY(-10px); /* Start slightly above */
+    width: max-content;
     font-size: 1em;
     color: #fff;
+    opacity: 1;
+    white-space: nowrap;
+    text-align:right;
+    padding: 8px 4px;
+    background-color: black; 
+    font-weight: bold; 
+    background-color: transparent; 
+
+}
+
+nav ul li:hover ~ .hovered-text {
     opacity: 1; 
-    top: 50%; 
+    transform: translateY(0); 
+    background-color: black; 
 }

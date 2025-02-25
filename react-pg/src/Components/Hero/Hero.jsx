@@ -1,7 +1,7 @@
 import React from 'react'
 import './Hero.css'
 
-import dark_arrow from '../../assets/edu/dark-arrow.png'
+
 import pfp from '../../assets/circle.png'
 
 const Hero = () => {

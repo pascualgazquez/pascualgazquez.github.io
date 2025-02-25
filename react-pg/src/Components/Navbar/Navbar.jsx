@@ -4,7 +4,10 @@ import './Navbar.css'
 import NuButton from '../NuButton/NuButton'
 
 import bg from '../../assets/navbarbg.gif'
-import logo from '../../assets/logo.gif'
+import logo from '../../assets/titles/logo.gif'
+
+import twitter from '../../assets/social/twitter.png'
+import sound from '../../assets/social/sound.png'
 
 import itch from '../../assets/social/itch.png'
 import github from '../../assets/social/github.png'
@@ -27,9 +30,6 @@ const Navbar = () => {
       <img src={logo} alt="" className="logo"/>
        <ul>
 
-        {/* TEXTO ............................... */}
-        <li className="hovered-text">{hoveredButton}</li>
-
         {/* ITCH.IO ............................. */}
         <li
           onMouseEnter={() => setHoveredButton('ITCH.IO')}
@@ -40,6 +40,35 @@ const Navbar = () => {
             color="#fa5c5c"
             link="https://pascualga.itch.io/"
             imgSrc={itch}
+            target="_blank"
+          />
+        </li>
+
+        {/* TWITTER ............................. */}
+        <li
+          onMouseEnter={() => setHoveredButton('TWITTER')}
+          onMouseLeave={() => setHoveredButton('')}
+        >
+          <NuButton
+            name="TWITTER"
+            color="#08a0e9"
+            link="https://x.com/pascualgaz"
+            imgSrc={twitter}
+            target="_blank"
+          />
+        </li>
+
+        {/* SOUNDCLOUD ............................. */}
+        <li
+          onMouseEnter={() => setHoveredButton('SOUNDCLOUD')}
+          onMouseLeave={() => setHoveredButton('')}
+        >
+          <NuButton
+            name="SOUNDCLOUD"
+            color="#ff7700"
+            link="https://soundcloud.com/pascualga"
+            imgSrc={sound}
+            target="_blank"
           />
         </li>
 
@@ -53,6 +82,7 @@ const Navbar = () => {
             color="#5c6bc0"
             link="https://github.com/pascualgazquez"
             imgSrc={github}
+            target="_blank"
           />
         </li>
 
@@ -66,8 +96,11 @@ const Navbar = () => {
             color="#0274b3"
             link="https://linkedin.com/in/pascualgazquez/"
             imgSrc={linkedin}
+            target="_blank"
           />
         </li>
+
+        <li style={{ display: 'inline-block', width: '20px' }}></li> 
 
         {/* CONTACTO ............................ */}
         <li
@@ -76,12 +109,17 @@ const Navbar = () => {
         >
           <NuButton
             name="CONTACTO"
-            color="#9979d3"
+            color="#ff0051"
             link="mailto:pascual.gazquez.compan@gmail.com"
             imgSrc={mail}
+            target="_blank"
           />
         </li>
         
+      </ul>
+      {/* TEXTO ............................... */}
+      <ul className="hovered-text" style={{ backgroundColor: hoveredButton ? 'black' : 'transparent', opacity: hoveredButton ? 1 : 0 }}>
+        {hoveredButton}
       </ul>
     </nav>
   )
