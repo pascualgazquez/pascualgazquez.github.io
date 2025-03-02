@@ -5,7 +5,9 @@ import icon from '../../assets/icon.gif'
 
 const Footer = () => {
   return(
-    <footer className="foot">
+    
+    <footer style={{backgroundColor: "transparent"}}>
+      <div className="foot">
       <div className="f-left">
         <p>© PASCUALGA</p>
       </div>
@@ -14,6 +16,7 @@ const Footer = () => {
       </div>
       <div className="f-right">
         <p>★</p>
+      </div>
       </div>
     </footer>
   )

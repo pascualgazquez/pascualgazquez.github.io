@@ -21,12 +21,13 @@ const Navbar = () => {
 
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
-      window.scrollY > 1080 ? setSticky(true) : setSticky(false);
+      window.scrollY > 1300 ? setSticky(true) : setSticky(false);
     })
   },[]);
 
   return (
-    <nav className = {`container ${sticky? 'dark-nav' : ''}`}>
+    <nav className = {`${sticky? 'dark-nav' : ''}`}>
+      <div className="nav-background"></div>
       <img src={logo} alt="" className="logo"/>
        <ul>
 
@@ -115,6 +116,8 @@ const Navbar = () => {
             target="_blank"
           />
         </li>
+
+        <li> <div className="espacio"></div> </li>
         
       </ul>
       {/* TEXTO ............................... */}

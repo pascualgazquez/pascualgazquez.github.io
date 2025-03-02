@@ -5,21 +5,41 @@ import NuButton from "../NuButton/NuButton.jsx";
 
 import senkai from '../../assets/carousel/senkai.gif'
 import fading from '../../assets/carousel/fading.gif'
+import pixel from '../../assets/carousel/pchar.gif'
 
 const projects = [
+  {
+    image: pixel,
+    title: "PIXEL CHARACTERS",
+    description: (
+      <>
+      This is a personal project where I set out to make
+      sprites based on two original characters.
+      <br/>
+      </>
+    ),
+    color:"#64d744",
+    link:"https://damaca.itch.io/senkai-rules"
+  },
   {
     image: senkai,
     title: "SENKAI RULES",
     description: (
       <>
-      This was a game made for the {" "}
-      <span style={{fontWeight: "bold", color: "#ff0000"}}>
-        GameGen Game Jam 2
-      </span>
-      , where I made most of the sprites and animations as well as the music. 
-      <br />
-      It was one of my first jams so it was pretty stressful 
-      but I learned a lot!
+        This is a game made for the {" "}
+        <span style={{fontStyle: "italic", color: "#ff0000"}}>
+        GameGen Game Jam 2</span>
+        {" "} where I ended up making most of the {" "} 
+        <span style={{fontWeight: "bold"}}> 
+        sprites </span> 
+        {" "} and {" "}
+        <span style={{fontWeight: "bold"}}>
+        animations</span>
+        {" "} as well as the {" "}
+        <span style={{fontWeight: "bold"}}>
+        music</span>. <br />
+        It was one of my first jams so it was pretty stressful 
+        but I learned a lot!
       </>
     ),
     color:"#ffb6ff",
@@ -30,13 +50,18 @@ const projects = [
     title: "FADING CROWN",
     description: (
       <>
-      This was a game made for the {" "} 
-      <span style={{fontWeight: "bold", color: "#ff0000"}}>
-      Ludum Dare 50
-      </span>
-      , I worked on the characters and their animations, as well as the music. 
-      <br />
-      It was interesting to work with a limited palette with just one accent color.
+        This is a game made for the {" "} 
+        <span style={{fontStyle: "italic", color: "#ff0000"}}>
+        Ludum Dare 50</span>
+        , I worked on the {" "}
+        <span style={{fontWeight: "bold"}}>
+        characters</span>
+        , {" "} 
+        <span style={{fontWeight: "bold"}}>
+        animations</span>
+        {" "} and {" "}
+        <span style={{fontWeight: "bold"}}>
+        music</span>. 
       </>
     ),
     color:"#fb6813",

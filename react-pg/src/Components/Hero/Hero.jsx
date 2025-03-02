@@ -17,7 +17,17 @@ const Hero = () => {
           Hello
         </h1>
         <p>
-          My name is Pascual Gázquez and I am a game developer from Spain. bla bla bla bla bla bla bla bla bla bla bla bla bla
+          <>
+          My name is {" "}
+          <span style={{fontWeight: "bold"}}>
+            Pascual Gázquez
+          </span>{" "}
+          and I am a game developer from Spain.
+          <br />
+          I specialize in character design and 2D art.
+          <br />
+          And I also make music.
+          </>
         </p>
       </div>
     </div>
