@@ -1,0 +1,77 @@
+:root {
+    --project-size: 500px;
+}
+
+.projects{
+    margin:20px 0px 40px 0px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.project img{
+    width:auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.project > img { 
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    border: 2px solid black; 
+    box-shadow: 4px 4px 0px black;
+    transition: all 0.1s ease-in-out;
+}
+
+.project{
+    position: relative;
+    max-width: var(--project-size);
+    width: 100%;
+}
+
+
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background: rgba(255, 255, 255, 0.664);
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0; 
+    padding-top: 10%;
+    
+}
+.caption img{
+    width: 90%;
+    margin-bottom: 10px;
+
+}
+
+.project:hover .caption{
+    
+    opacity: 1; 
+    transition: opacity 0.3s, padding-top 0.3s;
+    padding-top: 0; 
+    transform: translate(4px, 4px);
+  
+    
+}
+
+.project:hover > img{
+    box-shadow: none;
+    transform: translate(4px, 4px);
+}
