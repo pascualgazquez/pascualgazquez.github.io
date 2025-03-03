@@ -11,7 +11,7 @@
   border:black;
   width: fit-content;
   transition: all 0.1s ease-in-out;
-  box-shadow: 2px 2px 0px black;
+  box-shadow: 3px 3px 0px black;
   border: none; 
   cursor: pointer; 
   z-index: 11;
@@ -20,7 +20,7 @@
 .buttonbg:hover {
   background-color: var(--hover-color);
   box-shadow: none;
-  transform: translate(2px, 2px);
+  transform: translate(3px, 3px);
   z-index:9;
 }
 
