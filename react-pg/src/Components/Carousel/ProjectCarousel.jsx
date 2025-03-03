@@ -19,7 +19,7 @@ const projects = [
       </>
     ),
     color:"#64d744",
-    link:"https://damaca.itch.io/senkai-rules"
+    link:"/art"
   },
   {
     image: senkai,
