@@ -12,7 +12,7 @@
   }
   
   .f-left {
-    margin-left: 25px;
+    margin-left: 10px;
     text-align: left;
   }
   
@@ -21,17 +21,17 @@
   }
   
   .f-right {
-    margin-right: 25px;
+    margin-right: 10px;
     text-align: right;
   }
   
   .f-img {
-    width: 150%;
+    width: 100%;
     height: auto;
   }
   
   footer p {
-    font-size: 16px;
+    font-size: 10px;
     font-weight: bold;
     margin: 0;
     padding: 0;

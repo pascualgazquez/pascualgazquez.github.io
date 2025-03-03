@@ -3,7 +3,7 @@
     flex-direction: column;
     margin: auto; 
     align-items: center;
-    max-width: 1000px;
+    max-width: 600px;
 }
 
 /* IMAGEN ....................................... */
@@ -24,7 +24,7 @@
 
 .cimage img {
     width:100%;
-    height: 600px; 
+    height: 400px; 
     object-fit: cover;
     object-position: center; 
     border-radius: 20px;
@@ -41,7 +41,7 @@
 /* FLECHAS */
 button {
     margin:10px;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
     border: none;
     background: none;
@@ -49,7 +49,7 @@ button {
 
 .cprev, .cnext {
     color: black; 
-    font-size: 20px;
+    font-size: 14px;
 }
 
 button:disabled {
@@ -66,8 +66,8 @@ button:disabled {
 }
 
 .dot {
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 14px;
     background-color: #ccc;
     border-radius: 50%;
     display: inline-block;
@@ -92,9 +92,9 @@ button:disabled {
 
 .ctext h2 {
     position: relative;
-    font-size: 72px;
+    font-size: 40px;
     font-weight: bold;
-    text-shadow: 2px 2px black;
+    text-shadow: 0px 0px black;
     z-index:2;
 }
 
@@ -103,7 +103,7 @@ button:disabled {
     top: 0;
     left: 0;
     width: 100%;
-    -webkit-text-stroke: 4px black; 
+    -webkit-text-stroke: 3px black; 
     color: transparent; 
     z-index: 1; 
     white-space: nowrap; 
@@ -113,7 +113,7 @@ button:disabled {
 
 .ctext p {
     margin: 0;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 /* CHECK */
@@ -125,16 +125,16 @@ button:disabled {
     border:black;
     width: fit-content;
     transition: all 0.1s ease-in-out;
-    box-shadow: 4px 4px 0px black;
+    box-shadow: 2px 2px 0px black;
     border: none; 
     cursor: pointer; 
-    border: 3px solid black; 
-    margin-top:20px;
+    border: 2px solid black; 
+    margin-top:10px;
 }
 
 .check:hover {
     box-shadow: none;
-    transform: translate(4px, 4px);
+    transform: translate(2px, 2px);
 }
 
 /*TRANSITION*/
@@ -149,5 +149,5 @@ button:disabled {
 
 .fade-out {
     opacity: 0;
-    transform: translateX(-20px); /* Subtle slide effect */
+    transform: translateX(-10px); /* Subtle slide effect */
 }

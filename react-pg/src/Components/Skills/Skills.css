@@ -3,31 +3,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-top: 10px;
 }
 
 /* Keeps sections structured */
 .scontainer {
     display: flex;
     justify-content: space-between; /* Ensures categories are side by side */
-    gap: 40px;
+    gap:10px;
     width: 80%;
-    max-width: 900px; /* Prevents excessive stretching */
+    max-width: 600px; /* Prevents excessive stretching */
     flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 /* Category box */
 .div {
     flex: 1;
-    min-width: 300px; 
-    padding: 15px;
+    min-width: 200px; 
+    padding: 10px;
     text-align: center;
+
 }
 
 /* Category titles */
 .title2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -37,31 +38,34 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     list-style-type: none;
-    padding: 0;
     flex-wrap: wrap; /* Ensures items wrap properly */
+    margin: 0px 20px 0px 20px;
+    
 }
 
 /* Styles each skill item */
 .stext {
-    font-size: 18px;
+    font-size: 14px;
     background: #f3f3f3;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 4px 8px;
+    border-radius: 3px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     font-weight: bold;
+
 }
 
 /* Keeps icons aligned */
 .skill-icon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 .stext2{
-    font-size:20px;
+    font-size:16px;
     text-align: center;
+    margin-bottom: 0px;
 }

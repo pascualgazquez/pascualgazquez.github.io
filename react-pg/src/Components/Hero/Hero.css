@@ -51,17 +51,17 @@
 /* TEXTO e imagen ...............................*/
 
 .hero-right h1{
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .hero-right p{
     max-width: 700px;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .pfp{
     width: 100%;
-    max-width: 400px;
+    max-width: 250px;
     height: auto;
     border-radius: 50%;
     margin-right: 20px; 
