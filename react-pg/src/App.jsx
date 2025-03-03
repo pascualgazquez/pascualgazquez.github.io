@@ -1,52 +1,24 @@
-import React from 'react'
-import Navbar from './Components/Navbar/Navbar'
-import Hero from './Components/Hero/Hero'
-import Projects from './Components/Projects/Projects'
-import ProjectCarousel from './Components/Carousel/ProjectCarousel'
-import Title from './Components/Title/Title'
-import Footer from './Components/Footer/Footer'
-import Skills from './Components/Skills/Skills'
-
-import projects from './assets/titles/projects.gif'
-import more from './assets/titles/more.gif'
-import skills from './assets/titles/skills.gif'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
+import Home from "./pages/Home"; 
+import Art from "./pages/Art"; 
+import Music from "./pages/Music"; 
 
 const App = () => {
+  return (
+    <Router>
+      <Navbar />
 
-  const colorProjects = "#f0f0f0";
-  const colorSkills = "#d4d4d4";
-  const colorMore = "#f0f0f0";
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/art" element={<Art />} />
+        <Route path="/music" element={<Music />} />
+      </Routes>
 
-  return(
-    <div>
-      <Navbar/>
-      <Hero/>
+      <Footer />
+    </Router>
+  );
+};
 
-      <div className='container'
-      style={{ backgroundColor: colorProjects }}
-      >
-        <Title src={projects}/>
-        <ProjectCarousel/>
-      </div>
-
-      <div className='container'
-      style={{ backgroundColor: colorSkills}}
-      >
-        <Title src={skills}/>
-        <Skills/>
-      </div>
-
-      <div className='container'
-      style={{ backgroundColor: colorMore}}
-      >
-        <Title src={more}/>
-        <Projects/>
-      </div>
-
-      <Footer/>
-
-    </div>
-  )
-}
-
-export default App
+export default App;

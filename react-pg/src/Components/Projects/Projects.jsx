@@ -11,8 +11,18 @@ import artImg from '../../assets/more/2dart.gif'
 const Projects = () => {
   return (
     <div className="projects">
-      <Project image={artImg} captionImage={art} bgColor="rgba(0, 0, 0, 0.7)" />
-      <Project image={musicImg} captionImage={music} bgColor="rgba(0, 0, 0, 0.7)" />
+      <Project 
+        image={artImg} 
+        captionImage={art} 
+        bgColor="rgba(0, 0, 0, 0.7)" 
+        link="/art"
+      />
+      <Project 
+        image={musicImg} 
+        captionImage={music} 
+        bgColor="rgba(0, 0, 0, 0.7)"
+        link="/music" 
+      />
     </div>
   )
 }

@@ -5,13 +5,13 @@
 }
 
 .buttonbg {
-  padding: 0.5rem 0.5rem;
+  padding: 5px 5px;
   background-color: white;
   color: black;
   border:black;
   width: fit-content;
   transition: all 0.1s ease-in-out;
-  box-shadow: 4px 4px 0px black;
+  box-shadow: 2px 2px 0px black;
   border: none; 
   cursor: pointer; 
   z-index: 11;
@@ -20,11 +20,11 @@
 .buttonbg:hover {
   background-color: var(--hover-color);
   box-shadow: none;
-  transform: translate(4px, 4px);
+  transform: translate(2px, 2px);
   z-index:9;
 }
 
 .button-image {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 100%;
 }

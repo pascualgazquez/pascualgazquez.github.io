@@ -4,7 +4,7 @@ nav {
     left: 0;
     width: 100%;
     color: #fff;
-    padding: 5px 0px;
+    padding: 10px 10px;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -13,9 +13,8 @@ nav {
 }
 
 .logo {
-    width: 30%;
+    width: 100%;
     max-width: 200px;
-    margin-left: 5px;
     position: relative;
     z-index: 10;
 }
@@ -53,7 +52,7 @@ nav ul li {
 
 .hovered-text {
     position: absolute;
-    top: 80px;
+    top: 85px;
     right: 0px;
     transform: translateY(-10px); 
     width: max-content;
@@ -62,6 +61,7 @@ nav ul li {
     opacity: 0; 
     white-space: nowrap;
     text-align: right;
+    font-weight:bold;
     padding: 8px 8px;
     background-color: black;
     z-index: 10; 
@@ -70,8 +70,4 @@ nav ul li {
 nav ul li:hover ~ .hovered-text {
     opacity: 1;
     transform: translateY(0);
-}
-
-.espacio {
-    margin-right: 10px;
 }

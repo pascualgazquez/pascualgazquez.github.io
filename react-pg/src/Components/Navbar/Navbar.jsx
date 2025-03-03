@@ -6,18 +6,30 @@ import NuButton from '../NuButton/NuButton'
 import bg from '../../assets/navbarbg.gif'
 import logo from '../../assets/titles/logo.gif'
 
-import twitter from '../../assets/social/twitter.png'
-import sound from '../../assets/social/sound.png'
-
-import itch from '../../assets/social/itch.png'
-import github from '../../assets/social/github.png'
-import linkedin from '../../assets/social/linkedin.png'
-import mail from '../../assets/social/mail.png'
+import twitter from '../../assets/icons/twitter.svg'
+import sound from '../../assets/icons/soundcloud.svg'
+import itch from '../../assets/icons/itchio.svg'
+import github from '../../assets/icons/github.svg'
+import linkedin from '../../assets/icons/linkedin.svg'
+import mail from '../../assets/icons/email.svg'
 
 const Navbar = () => {
 
   const [hoveredButton, setHoveredButton] = useState('');
   const [sticky, setSticky] = useState(false);
+  const isHomePage = window.location.pathname === '/';
+
+  useEffect(() => {
+    if (isHomePage) {
+      const handleScroll = () => {
+        setSticky(window.scrollY > 800);
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    } else {
+      setSticky(true); 
+    }
+  }, [isHomePage]);
 
   useEffect(()=>{
     window.addEventListener('scroll', ()=>{
@@ -27,8 +39,13 @@ const Navbar = () => {
 
   return (
     <nav className = {`${sticky? 'dark-nav' : ''}`}>
+
       <div className="nav-background"></div>
-      <img src={logo} alt="" className="logo"/>
+
+      <a href="/">
+        <img src={logo} alt="Logo" className="logo"/>
+      </a>
+
        <ul>
 
         {/* ITCH.IO ............................. */}
@@ -116,8 +133,6 @@ const Navbar = () => {
             target="_blank"
           />
         </li>
-
-        <li> <div className="espacio"></div> </li>
         
       </ul>
       {/* TEXTO ............................... */}

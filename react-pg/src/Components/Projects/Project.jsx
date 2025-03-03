@@ -1,9 +1,13 @@
-const Project = ({ image, captionImage, bgColor }) => {
+const Project = ({ image, captionImage, bgColor, link }) => {
     return (
       <div className="project">
+
         <img src={image} alt="Project" />
+
         <div className="caption" style={{ backgroundColor: bgColor }}>
-          <img src={captionImage} className="captionimg" />
+          <a href={link} className="linkcontainer">
+            <img src={captionImage} className="captionimg" />
+          </a>
         </div>
       </div>
     );
