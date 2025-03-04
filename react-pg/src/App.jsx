@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import Art from "./pages/Art"; 
 import Music from "./pages/Music"; 
 
+import "@madzadev/audio-player/dist/index.css";
+
 const App = () => {
   return (
     <Router>

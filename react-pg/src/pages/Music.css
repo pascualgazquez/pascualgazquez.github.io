@@ -1,0 +1,13 @@
+.music-section {
+    display: grid;
+    grid-auto-flow: column; 
+    gap: 5px; 
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 50px; 
+  }
+  
+  .title1{
+    margin-top: 50px;
+    text-align: center;
+  }
