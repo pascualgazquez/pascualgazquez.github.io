@@ -15,13 +15,13 @@ const Projects = () => {
         image={artImg} 
         captionImage={art} 
         bgColor="rgba(0, 0, 0, 0.7)" 
-        link="/art"
+        link="/#/art"
       />
       <Project 
         image={musicImg} 
         captionImage={music} 
         bgColor="rgba(0, 0, 0, 0.7)"
-        link="/music" 
+        link="/#/music" 
       />
     </div>
   )
