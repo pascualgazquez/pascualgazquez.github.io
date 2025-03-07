@@ -1,13 +1,84 @@
-.music-section {
-    display: grid;
-    grid-auto-flow: column; 
-    gap: 5px; 
-    justify-content: center; 
-    align-items: center;
-    margin-bottom: 50px; 
-  }
-  
-  .title1{
-    margin-top: 50px;
-    text-align: center;
-  }
+/* Apply shadow to all elements and transition for smooth click effect */
+.jukebox-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+
+}
+
+/* Categories Window */
+.categories-window {
+  width: 50%;
+  max-width: 500px;
+}
+
+/* Tabs */
+.tabs {
+  font-size: 1.2em;
+  background-color: transparent;
+
+  margin: 0;
+}
+
+.tabs button {
+  flex: 1;
+  cursor: pointer;
+  background: none;
+  font-weight: bold;
+  background-color: transparent;
+  color: gray;
+  padding: 10px;
+  margin: 0px;
+
+
+}
+
+.tabs button:hover {
+  color: black;
+}
+
+.tabs .active {
+  background-color: white;
+
+  color: black;
+}
+
+/* Category Content */
+.category-content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+}
+
+/* Track Row - Individual tracks */
+.track-row {
+  background-color: white;
+  border: 2px solid white;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 0px px black;
+  margin-bottom: 0px;
+}
+
+.track-row:hover {
+  background: lightgray;
+}
+
+/* Active state when the song is selected */
+.track-row.active {
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px black;
+}
+
+/* Music Player */
+.music-player-container {
+  display: flex;
+  justify-content: left;
+}
+

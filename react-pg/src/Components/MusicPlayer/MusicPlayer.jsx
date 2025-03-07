@@ -7,6 +7,8 @@ import pauseIcon from "../../assets/icons/pause.svg";
 import soundOn from "../../assets/icons/soundon.svg";
 import soundOff from "../../assets/icons/soundoff.svg";
 
+import defaultPic from "../../assets/music/covers/default.gif";
+
 const lightenColor = (hex, percent) => {
   // Ensure the input is a valid hex color
   hex = hex.replace(/^#/, ""); 
@@ -35,15 +37,14 @@ const lightenColor = (hex, percent) => {
   return `#${r.toString(16).padStart(2, "0")}${g.toString(16).padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
 };
 
-
-
-
 const MusicPlayer = ({ title, cover, track, color }) => {
   const waveformRef = useRef(null);
   const [waveSurfer, setWaveSurfer] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(0.5);
   const [showVolume, setShowVolume] = useState(false); // Toggle for volume slider  
+
+  // ---
 
   useEffect(() => {
     if (waveformRef.current && !waveSurfer) {
@@ -88,7 +89,10 @@ const MusicPlayer = ({ title, cover, track, color }) => {
     }
   };
 
+  // --
+
   return (
+    // 
     <div className="music-player" style={{ backgroundColor: lightenColor(color, 50) }}>
 
       <div className="title-container">
@@ -96,7 +100,7 @@ const MusicPlayer = ({ title, cover, track, color }) => {
       </div>
   
       <div className="cover-container">
-        <img src={cover} alt={title} className="cover" />
+        <img src={cover || defaultPic} alt={title} className="cover" />
       </div>
 
       <div ref={waveformRef} className="waveform"></div>

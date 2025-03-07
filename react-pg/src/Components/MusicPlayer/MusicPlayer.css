@@ -3,19 +3,28 @@
   flex-direction: column;
   align-items: center;
   background: #D3D3D3	;
-  border-radius: 10px;
   color: black;
-  text-align: center;
+  text-align: left;
   width: 250px;
-  margin:10px 10px 10px 10px;
-  border:2px solid black;
+
+  background: 
+    linear-gradient(rgba(211, 211, 211, 0), rgba(211, 211, 211, 0)), 
+    url("../../assets/music/covers/bg.gif"); 
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px; 
+
 }
+
 
 /* TITULO */
 
 .title-container {
     width:100%;
-    border-radius: 8px 8px 0px 0px;
 }
 
 .title {
@@ -29,8 +38,6 @@
   position: relative;
   width: 250px;
   height: 250px; 
-  overflow: hidden;
-  border: 2px solid black;
 }
 
 .cover {
@@ -44,9 +51,8 @@
 .waveform {
     width: 100%;
     height: 52px;
-    background: url("../../assets/static.gif")  center center;
+    background: #292929 ;
     background-size: 50%;
-    border-bottom: 2px solid black;
   }
   
 
