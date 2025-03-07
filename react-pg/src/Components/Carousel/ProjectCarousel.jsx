@@ -19,7 +19,7 @@ const projects = [
       </>
     ),
     color:"#64d744",
-    link:"/art"
+    link:"/#/art"
   },
   {
     image: senkai,

@@ -27,6 +27,7 @@ const Home = () => {
         <Title src={more} />
         <Projects />
       </div>
+ 
     </>
   );
 };
